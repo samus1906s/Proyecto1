@@ -32,7 +32,7 @@ public class Combustible {
     }
 
     public void setCapacityTank(double capacityTank) {
-        this.capacityTank = capacityTank;
+        this.capacityTank = capacityTank; 
     }
 
     public Combustible(TipoCombustible type, double fuelLevel) {
