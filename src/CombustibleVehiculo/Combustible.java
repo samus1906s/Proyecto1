@@ -10,12 +10,7 @@ package CombustibleVehiculo;
  */
 public class Combustible {
     
-    private TipoCombustible type;
     private double fuelLevel, capacityTank;
-
-    public TipoCombustible getType() {
-        return type;
-    }
 
     public double getFuelLevel() {
         return fuelLevel;
@@ -35,8 +30,7 @@ public class Combustible {
         this.capacityTank = capacityTank;
     }
 
-    public Combustible(TipoCombustible type, double fuelLevel) {
-        this.type = type;
+    public Combustible(double fuelLevel) {
         this.capacityTank = 15.6; 
         this.setFuelLevel(fuelLevel);
     }
@@ -52,13 +46,18 @@ public class Combustible {
         }
     }
     
-    public void fuelConsume(double liters){
-      if (liters <= 0) return;
-      if (this.fuelLevel >= liters) {
-        this.fuelLevel -= liters;
-    } else {
-        this.fuelLevel = 0;
-      }
-    }
+     public void fuelConsume(double distanciaKm, int rpm) {
+        if (distanciaKm <= 0 || rpm < 0) return;
 
+        double consumoBase = 0.1; 
+        double factorRPM = 1 + (rpm / 10000.0); 
+        double consumo = distanciaKm * consumoBase * factorRPM;
+
+        fuelLevel -= consumo;
+
+        if (fuelLevel < 0) {
+            fuelLevel = 0;
+        }
+    }
 }
+
