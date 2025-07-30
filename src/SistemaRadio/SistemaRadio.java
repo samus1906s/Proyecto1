@@ -10,12 +10,12 @@ package SistemaRadio;
  */
 public class SistemaRadio {
     private boolean encendida;
-    private String modo; // "AM", "FM", "Bluetooth"
+    private ModoRadio modo;
     private double estacionActual;
     private String dispositivoBluetooth;
     private boolean bluetoothConectado;
 
-    // Rangos
+    // Rangos para AM y FM
     private final double AM_MIN = 530;
     private final double AM_MAX = 1700;
     private final double AM_STEP = 10;
@@ -24,9 +24,9 @@ public class SistemaRadio {
     private final double FM_MAX = 107.9;
     private final double FM_STEP = 0.2;
 
-    public SistemaRadio() {
+    public Radio() {
         this.encendida = false;
-        this.modo = "FM";
+        this.modo = ModoRadio.FM;
         this.estacionActual = FM_MIN;
         this.dispositivoBluetooth = "";
         this.bluetoothConectado = false;
@@ -46,16 +46,16 @@ public class SistemaRadio {
         if (!encendida) return;
 
         switch (modo) {
-            case "FM":
-                modo = "AM";
+            case FM:
+                modo = ModoRadio.AM;
                 estacionActual = AM_MIN;
                 break;
-            case "AM":
-                modo = "Bluetooth";
+            case AM:
+                modo = ModoRadio.BLUETOOTH;
                 estacionActual = 0;
                 break;
-            case "Bluetooth":
-                modo = "FM";
+            case BLUETOOTH:
+                modo = ModoRadio.FM;
                 estacionActual = FM_MIN;
                 bluetoothConectado = false;
                 dispositivoBluetooth = "";
@@ -66,19 +66,92 @@ public class SistemaRadio {
     public void subirEstacion() {
         if (!encendida) return;
 
-        if (modo.equals("FM")) {
-            estacionActual = (estacionActual + FM_STEP > FM_MAX) ? FM_MIN : Math.round((estacionActual + FM_STEP) * 10.0) / 10.0;
-        } else if (modo.equals("AM")) {
-            estacionActual = (estacionActual + AM_STEP > AM_MAX) ? AM_MIN : estacionActual + AM_STEP;
+        switch (modo) {
+            case FM:
+                estacionActual = (estacionActual + FM_STEP > FM_MAX)
+                        ? FM_MIN
+                        : Math.round((estacionActual + FM_STEP) * 10.0) / 10.0;
+                break;
+            case AM:
+                estacionActual = (estacionActual + AM_STEP > AM_MAX)
+                        ? AM_MIN
+                        : estacionActual + AM_STEP;
+                break;
+            default:
+                break;
         }
     }
 
     public void bajarEstacion() {
         if (!encendida) return;
 
-        if (modo.equals("FM")) {
-            estacionActual = (estacionActual - FM_STEP < FM_MIN) ? FM_MAX : Math.round((estacionActual - FM_STEP) * 10.0) / 10.0;
-        } else if (modo.equals("AM")) {
-            estacionActual = (estacionActual - AM_STEP < AM_MIN) ? AM_MAX : estacionActual - AM_STEP;
+        switch (modo) {
+            case FM:
+                estacionActual = (estacionActual - FM_STEP < FM_MIN)
+                        ? FM_MAX
+                        : Math.round((estacionActual - FM_STEP) * 10.0) / 10.0;
+                break;
+            case AM:
+                estacionActual = (estacionActual - AM_STEP < AM_MIN)
+                        ? AM_MAX
+                        : estacionActual - AM_STEP;
+                break;
+            default:
+                break;
         }
-    }    }
+    }
+
+    public void conectarBluetooth(String nombreDispositivo) {
+        if (!encendida || modo != ModoRadio.BLUETOOTH) return;
+
+        dispositivoBluetooth = nombreDispositivo;
+        bluetoothConectado = true;
+    }
+
+    public void desconectarBluetooth() {
+        bluetoothConectado = false;
+        dispositivoBluetooth = "";
+    }
+
+    // ================= GETTERS =================
+
+    public boolean isEncendida() {
+        return encendida;
+    }
+
+    public ModoRadio getModo() {
+        return modo;
+    }
+
+    public double getEstacionActual() {
+        return estacionActual;
+    }
+
+    public boolean isBluetoothConectado() {
+        return bluetoothConectado;
+    }
+
+    public String getDispositivoBluetooth() {
+        return dispositivoBluetooth;
+    }
+
+    public String getEstadoGeneral() {
+        if (!encendida) return "Radio apagada.";
+
+        String estado = "Modo: " + modo.name();
+
+        switch (modo) {
+            case FM:
+            case AM:
+                estado += " | Estación: " + estacionActual;
+                break;
+            case BLUETOOTH:
+                estado += bluetoothConectado
+                        ? " | Conectado a: " + dispositivoBluetooth
+                        : " | No conectado";
+                break;
+        }
+
+        return estado;
+    }
+}
