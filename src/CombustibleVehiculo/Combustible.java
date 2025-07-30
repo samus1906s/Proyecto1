@@ -32,7 +32,11 @@ public class Combustible {
     }
 
     public void setCapacityTank(double capacityTank) {
+<<<<<<< HEAD
         this.capacityTank = capacityTank; 
+=======
+        this.capacityTank = capacityTank;
+>>>>>>> 2a55e6a (Clase combustible y Enum)
     }
 
     public Combustible(TipoCombustible type, double fuelLevel) {
