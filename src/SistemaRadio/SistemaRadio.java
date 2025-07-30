@@ -3,7 +3,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package SistemaRadio;
-
+import SistemaRadio.ModoRadio;
 /**
  *
  * @author Valdelomaar
@@ -12,10 +12,8 @@ public class SistemaRadio {
     private boolean encendida;
     private ModoRadio modo;
     private double estacionActual;
-    private String dispositivoBluetooth;
-    private boolean bluetoothConectado;
 
-    // Rangos para AM y FM
+    // Rangos AM/FM
     private final double AM_MIN = 530;
     private final double AM_MAX = 1700;
     private final double AM_STEP = 10;
@@ -24,12 +22,10 @@ public class SistemaRadio {
     private final double FM_MAX = 107.9;
     private final double FM_STEP = 0.2;
 
-    public Radio() {
+    public SistemaRadio() {
         this.encendida = false;
         this.modo = ModoRadio.FM;
         this.estacionActual = FM_MIN;
-        this.dispositivoBluetooth = "";
-        this.bluetoothConectado = false;
     }
 
     public void encender() {
@@ -38,8 +34,6 @@ public class SistemaRadio {
 
     public void apagar() {
         encendida = false;
-        bluetoothConectado = false;
-        dispositivoBluetooth = "";
     }
 
     public void cambiarModo() {
@@ -57,8 +51,6 @@ public class SistemaRadio {
             case BLUETOOTH:
                 modo = ModoRadio.FM;
                 estacionActual = FM_MIN;
-                bluetoothConectado = false;
-                dispositivoBluetooth = "";
                 break;
         }
     }
@@ -101,20 +93,7 @@ public class SistemaRadio {
         }
     }
 
-    public void conectarBluetooth(String nombreDispositivo) {
-        if (!encendida || modo != ModoRadio.BLUETOOTH) return;
-
-        dispositivoBluetooth = nombreDispositivo;
-        bluetoothConectado = true;
-    }
-
-    public void desconectarBluetooth() {
-        bluetoothConectado = false;
-        dispositivoBluetooth = "";
-    }
-
-    // ================= GETTERS =================
-
+    // Getters
     public boolean isEncendida() {
         return encendida;
     }
@@ -127,29 +106,15 @@ public class SistemaRadio {
         return estacionActual;
     }
 
-    public boolean isBluetoothConectado() {
-        return bluetoothConectado;
-    }
-
-    public String getDispositivoBluetooth() {
-        return dispositivoBluetooth;
-    }
-
     public String getEstadoGeneral() {
         if (!encendida) return "Radio apagada.";
 
         String estado = "Modo: " + modo.name();
 
-        switch (modo) {
-            case FM:
-            case AM:
-                estado += " | Estación: " + estacionActual;
-                break;
-            case BLUETOOTH:
-                estado += bluetoothConectado
-                        ? " | Conectado a: " + dispositivoBluetooth
-                        : " | No conectado";
-                break;
+        if (modo == ModoRadio.AM || modo == ModoRadio.FM) {
+            estado += " | Estación: " + estacionActual;
+        } else {
+            estado += " | Modo Bluetooth activo";
         }
 
         return estado;
