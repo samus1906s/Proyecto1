@@ -4,6 +4,7 @@
  */
 package AlarmaVehiculo;
 import VehiculoPuertas.Puerta;
+import MotorVehiculo.Motor;
 /**
  *
  * @author je110
@@ -11,14 +12,16 @@ import VehiculoPuertas.Puerta;
 public class Alarma {
     private boolean stateAlarm;
     private Puerta door;
+    private Motor car;
 
     public boolean isStateAlarm() {
         return stateAlarm;
     }
 
-    public Alarma(Puerta door) {
+    public Alarma(Puerta door, Motor car) {
         this.stateAlarm = false;
         this.door = door;
+        this.car = car;
     }
     
     public void activateAlarm(){
@@ -30,14 +33,29 @@ public class Alarma {
     }
     
     public void unlockAlarm(){
-        if (!stateAlarm){
-            door.abrir();
-        }
+       
+        desactivateAlarm();
+        door.abrir();
     }
     
     public void lockAlarm(){
-        if (stateAlarm){
+        
+        door.cerrar();
+        activateAlarm();
+    }
+    
+    public void openDoorWithAlarm(){
+        if (stateAlarm && !door.estaAbierta()){
             door.cerrar();
+        }
+        door.abrir();
+    }
+    
+    public void offCarAlarm(){
+        if (stateAlarm){
+            car.MotorOff();
+        }else{
+            car.MotorOn();
         }
     }
 }
