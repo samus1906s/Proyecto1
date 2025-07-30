@@ -9,5 +9,25 @@ package SistemaRadio;
  * @author Valdelomaar
  */
 public enum ModoRadio {
-    AM, FM, BLUETOOTH;
+    AM("Modo AM"),
+    FM("Modo FM"),
+    BLUETOOTH("Modo Bluetooth");
+    
+    private final String descripcion;
+
+    ModoRadio(String descripcion) {
+        this.descripcion = descripcion;
+    }
+
+    public String getDescripcion() {
+        return descripcion;
+        
+        
+    }
+
+    @Override
+    public String toString() {
+        return "ModoRadio{" + "ordinal=" + ordinal() + ", name=" + name() + ", descripcion=" + descripcion + '}';
+    }
 }
+
