@@ -26,7 +26,7 @@ public class Combustible {
     }
 
     public void setFuelLevel(double fuelLevel) {
-        if (fuelLevel >= 0){
+        if (fuelLevel >= 0 && fuelLevel <= capacityTank){
         this.fuelLevel = fuelLevel;
         }
     }
@@ -37,8 +37,8 @@ public class Combustible {
 
     public Combustible(TipoCombustible type, double fuelLevel) {
         this.type = type;
-        this.fuelLevel = fuelLevel;
         this.capacityTank = 15.6; 
+        this.setFuelLevel(fuelLevel);
     }
     
     public double fuelPercentage(){
@@ -52,4 +52,13 @@ public class Combustible {
         }
     }
     
+    public void fuelConsume(double liters){
+      if (liters <= 0) return;
+      if (this.fuelLevel >= liters) {
+        this.fuelLevel -= liters;
+    } else {
+        this.fuelLevel = 0;
+      }
+    }
+
 }
