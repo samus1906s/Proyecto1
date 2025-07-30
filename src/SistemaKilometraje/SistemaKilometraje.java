@@ -36,6 +36,12 @@ public class SistemaKilometraje {
         this.combustible = combustible;
     }
     
+    public void setVelocidadActual(int velocidad) {
+    if (velocidad >= 0) {
+        this.velocidadActual = velocidad;
+    }
+}
+
     public SistemaKilometraje(Motor motor, Acelerar rpm) {
         this.kilometrajeTotal = 0.0;
         this.kilometrajeViaje = 0.0;
@@ -50,7 +56,7 @@ public class SistemaKilometraje {
         kilometrajeViaje += distanciaRecorrida;
 
         if (combustible != null && rpm != null) {
-            combustible.consumir(distanciaRecorrida, rpm.getRpm());
+            combustible.fuelConsume(distanciaRecorrida, rpm.getRpm());
         }
     }
 }
