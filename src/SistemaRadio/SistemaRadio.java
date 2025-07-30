@@ -13,6 +13,7 @@ public class SistemaRadio {
     private ModoRadio modo;
     private double estacionActual;
 
+    // Rangos AM/FM
     private final double AM_MIN = 530;
     private final double AM_MAX = 1700;
     private final double AM_STEP = 10;
