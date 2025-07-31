@@ -53,9 +53,9 @@ public class Alarma {
     
     public void offCarAlarm(){
         if (stateAlarm){
-            car.MotorOff();
+            car.apagar();
         }else{
-            car.MotorOn();
+            car.encender();
         }
     }
 }
