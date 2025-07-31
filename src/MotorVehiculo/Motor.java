@@ -6,6 +6,7 @@ package MotorVehiculo;
 
 import SistemaRadio.SistemaRadio;
 import AcelerarVehiculo.Acelerar;
+import SistemaClimatizacion.Climatizacion;
 /**
  *
  * @author je110
@@ -15,6 +16,7 @@ public class Motor {
     private boolean state;
     private SistemaRadio radio;
     private Acelerar acelerador;
+    private Climatizacion clima;
 
     public boolean isState() {
         return state;
@@ -23,11 +25,20 @@ public class Motor {
     public SistemaRadio getRadio() {
         return radio;
     }
+
+    public Acelerar getAcelerador() {
+        return acelerador;
+    }
+
+    public Climatizacion getClima() {
+        return clima;
+    }
     
     public Motor() {
         this.state = false;
         this.radio = new SistemaRadio();
         this.acelerador = new Acelerar();
+        this.clima = new Climatizacion(this);
     }
     
     public void MotorOn(){
