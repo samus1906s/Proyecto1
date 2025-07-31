@@ -13,7 +13,7 @@ public enum TipoLuz {
     DELANTERA_BAJA(Color.WHITE),
     DELANTERA_ALTA(Color.WHITE),
     INTERMITENTE(Color.ORANGE),
-    EMERGENCIA(Color.RED),
+    EMERGENCIA(Color.ORANGE),
     PUERTAS(Color.BLUE);
 
     private final Color color;
