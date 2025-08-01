@@ -37,6 +37,7 @@ public class SistemaKilometraje {
         this.combustible = combustible;
     }
     
+    
     public void setVelocidadActual(int velocidad) {
     if (velocidad >= 0) {
         this.velocidadActual = velocidad;
