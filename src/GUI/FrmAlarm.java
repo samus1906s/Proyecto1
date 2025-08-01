@@ -22,9 +22,6 @@ public class FrmAlarm extends javax.swing.JFrame {
      */
     public FrmAlarm() {
         initComponents();
-        ButtonGroup group = new ButtonGroup();
-        group.add(Unlocked);
-        group.add(Blocked);
         Unlocked.setOpaque(true); 
         Blocked.setOpaque(true);
     }
@@ -38,6 +35,7 @@ public class FrmAlarm extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        buttonGroup2 = new javax.swing.ButtonGroup();
         jPanel1 = new javax.swing.JPanel();
         Unlocked = new javax.swing.JRadioButton();
         Blocked = new javax.swing.JRadioButton();
@@ -46,6 +44,7 @@ public class FrmAlarm extends javax.swing.JFrame {
 
         jPanel1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(102, 255, 255)));
 
+        buttonGroup2.add(Unlocked);
         Unlocked.setText("Unlocked");
         Unlocked.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -53,6 +52,7 @@ public class FrmAlarm extends javax.swing.JFrame {
             }
         });
 
+        buttonGroup2.add(Blocked);
         Blocked.setText("Blocked");
         Blocked.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -147,6 +147,7 @@ public class FrmAlarm extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JRadioButton Blocked;
     private javax.swing.JRadioButton Unlocked;
+    private javax.swing.ButtonGroup buttonGroup2;
     private javax.swing.JPanel jPanel1;
     // End of variables declaration//GEN-END:variables
 }
