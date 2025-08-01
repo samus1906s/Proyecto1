@@ -9,7 +9,7 @@ package MotorVehiculo;
  */
 public class Motor {
     
-private boolean state;
+protected boolean state;
 
     public Motor() {
         this.state = false;
