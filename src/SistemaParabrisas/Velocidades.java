@@ -12,6 +12,7 @@ public enum Velocidades {
     BAJA("Baja"),
     MEDIA("Media"),
     ALTA("Alta");
+
     
     private final String velocidadparabrisas;
 
@@ -22,5 +23,11 @@ public enum Velocidades {
     private Velocidades(String velocidadparabrisas) {
         this.velocidadparabrisas = velocidadparabrisas;
     }
-         
+
+    @Override
+    public String toString() {
+        return ", velocidadparabrisas=" + velocidadparabrisas ;
+    }
+    
+    
 }
