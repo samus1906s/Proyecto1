@@ -14,16 +14,16 @@ public class SistemaRadio {
     private double estacionActual;
 
     // Rangos AM/FM
-    private final double AM_MIN = 530;
-    private final double AM_MAX = 1700;
-    private final double AM_STEP = 10;
+    public final double AM_MIN = 530;
+    public final double AM_MAX = 1700;
+    public final double AM_STEP = 10;
 
-    private final double FM_MIN = 88.1;
-    private final double FM_MAX = 107.9;
-    private final double FM_STEP = 0.2;
+    public final double FM_MIN = 88.1;
+    public final double FM_MAX = 107.9;
+    public final double FM_STEP = 0.2;
 
     public SistemaRadio() {
-        this.encendida = false;
+        this.encendida = true;
         this.modo = ModoRadio.FM;
         this.estacionActual = FM_MIN;
     }
@@ -36,7 +36,7 @@ public class SistemaRadio {
         encendida = false;
     }
 
-    public void cambiarModo() {
+    public void cambiarModo(ModoRadio FM) {
         if (!encendida) return;
 
         switch (modo) {
@@ -106,6 +106,14 @@ public class SistemaRadio {
         return estacionActual;
     }
 
+    public void setEstacionActual(double estacion) {
+    if (modo == ModoRadio.FM && estacion >= FM_MIN && estacion <= FM_MAX) {
+        this.estacionActual = estacion;
+    } else if (modo == ModoRadio.AM && estacion >= AM_MIN && estacion <= AM_MAX) {
+        this.estacionActual = estacion;
+    }
+}
+    
     public String getEstadoGeneral() {
         if (!encendida) return "Radio apagada.";
 
