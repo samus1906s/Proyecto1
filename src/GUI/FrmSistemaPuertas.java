@@ -15,11 +15,13 @@ import javax.swing.JOptionPane;
 public class FrmSistemaPuertas extends javax.swing.JFrame {
     private Puerta puerta =  new Puerta();
     private SistemaControlPuerta sistemaControlPuerta;
-    Motor motor = new Motor(); 
+    Motor motor = new Motor();
+    
     
     public FrmSistemaPuertas() {
         initComponents();
         sistemaControlPuerta = new SistemaControlPuerta(motor);
+        motor.encender();
     }
 
     public void mostrarMensaje(String texto, String titulo, int tipoMensaje){
