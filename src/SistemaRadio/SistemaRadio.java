@@ -9,6 +9,7 @@ import SistemaRadio.ModoRadio;
  * @author Valdelomaar
  */
 public class SistemaRadio {
+    public int volumen;
     private boolean encendida;
     private ModoRadio modo;
     private double estacionActual;
@@ -31,7 +32,30 @@ public class SistemaRadio {
     public void encender() {
         encendida = true;
     }
+    
+    public void bajarVolumen() {
+        if (volumen > 0) {
+            volumen--;
+        }
+    }
 
+    public int getVolumen() {
+        return volumen;
+    }
+
+    
+    
+    public void subirVolumen() {
+        if (volumen < 100) {
+            volumen++;
+        }
+        
+    
+        
+    
+
+        
+    }
     public void apagar() {
         encendida = false;
     }
