@@ -24,6 +24,7 @@
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
 <<<<<<< HEAD
+<<<<<<< HEAD
           <Group type="102" alignment="0" attributes="0">
               <EmptySpace min="-2" pref="27" max="-2" attributes="0"/>
               <Component id="jPanel1" min="-2" max="-2" attributes="0"/>
@@ -34,11 +35,21 @@
               <Component id="jPanel1" min="-2" pref="719" max="-2" attributes="0"/>
           </Group>
           <Group type="102" alignment="0" attributes="0">
+=======
+          <Group type="102" alignment="1" attributes="0">
+              <EmptySpace min="0" pref="17" max="32767" attributes="0"/>
+              <Component id="jPanel1" min="-2" pref="719" max="-2" attributes="0"/>
+          </Group>
+          <Group type="102" alignment="0" attributes="0">
+>>>>>>> feature/AvanceGUIRadio
               <EmptySpace max="32767" attributes="0"/>
               <Component id="actualizarVolumen" min="-2" pref="390" max="-2" attributes="0"/>
               <EmptySpace min="-2" pref="35" max="-2" attributes="0"/>
               <Component id="labelVol" min="-2" pref="139" max="-2" attributes="0"/>
               <EmptySpace min="-2" pref="53" max="-2" attributes="0"/>
+<<<<<<< HEAD
+>>>>>>> feature/AvanceGUIRadio
+=======
 >>>>>>> feature/AvanceGUIRadio
           </Group>
       </Group>
@@ -46,8 +57,11 @@
     <DimensionLayout dim="1">
       <Group type="103" groupAlignment="0" attributes="0">
 <<<<<<< HEAD
+<<<<<<< HEAD
           <Component id="jPanel1" alignment="1" max="32767" attributes="0"/>
 =======
+=======
+>>>>>>> feature/AvanceGUIRadio
           <Group type="102" alignment="0" attributes="0">
               <Component id="jPanel1" min="-2" max="-2" attributes="0"/>
               <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
@@ -57,6 +71,9 @@
               </Group>
               <EmptySpace pref="239" max="32767" attributes="0"/>
           </Group>
+<<<<<<< HEAD
+>>>>>>> feature/AvanceGUIRadio
+=======
 >>>>>>> feature/AvanceGUIRadio
       </Group>
     </DimensionLayout>
@@ -67,6 +84,7 @@
       <Layout>
         <DimensionLayout dim="0">
           <Group type="103" groupAlignment="0" attributes="0">
+<<<<<<< HEAD
 <<<<<<< HEAD
               <Group type="102" alignment="1" attributes="0">
                   <EmptySpace max="32767" attributes="0"/>
@@ -80,17 +98,18 @@
               <Group type="102" alignment="0" attributes="0">
                   <EmptySpace min="-2" pref="51" max="-2" attributes="0"/>
                   <Component id="jButton1" min="-2" pref="86" max="-2" attributes="0"/>
+=======
+              <Group type="102" attributes="0">
+>>>>>>> feature/AvanceGUIRadio
                   <Group type="103" groupAlignment="0" attributes="0">
-                      <Group type="102" attributes="0">
-                          <EmptySpace min="-2" pref="54" max="-2" attributes="0"/>
-                          <Component id="jComboBox1" min="-2" pref="90" max="-2" attributes="0"/>
-                          <EmptySpace pref="67" max="32767" attributes="0"/>
-                          <Component id="jButton2" min="-2" pref="85" max="-2" attributes="0"/>
-                          <EmptySpace min="-2" pref="39" max="-2" attributes="0"/>
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace min="-2" pref="33" max="-2" attributes="0"/>
+                          <Component id="radioEncender" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <Group type="102" alignment="0" attributes="0">
-                          <EmptySpace min="-2" pref="4" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="262" max="-2" attributes="0"/>
                           <Component id="jComboBox2" min="-2" pref="174" max="-2" attributes="0"/>
+<<<<<<< HEAD
                           <EmptySpace max="32767" attributes="0"/>
 =======
               <Group type="102" attributes="0">
@@ -102,6 +121,8 @@
                       <Group type="102" alignment="0" attributes="0">
                           <EmptySpace min="-2" pref="262" max="-2" attributes="0"/>
                           <Component id="jComboBox2" min="-2" pref="174" max="-2" attributes="0"/>
+=======
+>>>>>>> feature/AvanceGUIRadio
                       </Group>
                   </Group>
                   <EmptySpace max="32767" attributes="0"/>
@@ -127,6 +148,9 @@
                               </Group>
                           </Group>
                           <EmptySpace min="-2" pref="229" max="-2" attributes="0"/>
+<<<<<<< HEAD
+>>>>>>> feature/AvanceGUIRadio
+=======
 >>>>>>> feature/AvanceGUIRadio
                       </Group>
                   </Group>
@@ -137,7 +161,11 @@
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" attributes="0">
 <<<<<<< HEAD
+<<<<<<< HEAD
                   <EmptySpace pref="14" max="32767" attributes="0"/>
+=======
+                  <EmptySpace min="-2" max="-2" attributes="0"/>
+>>>>>>> feature/AvanceGUIRadio
 =======
                   <EmptySpace min="-2" max="-2" attributes="0"/>
 >>>>>>> feature/AvanceGUIRadio
@@ -146,22 +174,29 @@
                       <Component id="jLabel2" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+                  <EmptySpace type="separate" max="-2" attributes="0"/>
+>>>>>>> feature/AvanceGUIRadio
                   <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" attributes="0">
+                          <EmptySpace min="-2" pref="121" max="-2" attributes="0"/>
+                          <Component id="radioEncender" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="jComboBox2" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="21" max="-2" attributes="0"/>
+                          <Component id="subirVolumen" min="-2" pref="76" max="-2" attributes="0"/>
+                      </Group>
                       <Group type="102" alignment="0" attributes="0">
-                          <EmptySpace min="-2" pref="249" max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="3" attributes="0">
-                              <Component id="jButton2" alignment="3" min="-2" pref="78" max="-2" attributes="0"/>
-                              <Component id="jButton1" alignment="3" min="-2" pref="76" max="-2" attributes="0"/>
+                          <Component id="jPanel2" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="bajarVolumen" min="-2" pref="78" max="-2" attributes="0"/>
+                              <Component id="jComboBox1" min="-2" pref="80" max="-2" attributes="0"/>
                           </Group>
                       </Group>
-                      <Group type="102" attributes="0">
-                          <Component id="jPanel2" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace min="-2" pref="34" max="-2" attributes="0"/>
-                          <Component id="jComboBox2" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace pref="47" max="32767" attributes="0"/>
-                          <Component id="jComboBox1" min="-2" pref="80" max="-2" attributes="0"/>
-                      </Group>
                   </Group>
+<<<<<<< HEAD
                   <EmptySpace min="-2" pref="93" max="-2" attributes="0"/>
 =======
                   <EmptySpace type="separate" max="-2" attributes="0"/>
@@ -185,13 +220,20 @@
                   </Group>
                   <EmptySpace min="220" pref="10" max="32767" attributes="0"/>
 >>>>>>> feature/AvanceGUIRadio
+=======
+                  <EmptySpace min="220" pref="10" max="32767" attributes="0"/>
+>>>>>>> feature/AvanceGUIRadio
               </Group>
           </Group>
         </DimensionLayout>
       </Layout>
       <SubComponents>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <Component class="javax.swing.JButton" name="jButton1">
+=======
+        <Component class="javax.swing.JButton" name="subirVolumen">
+>>>>>>> feature/AvanceGUIRadio
 =======
         <Component class="javax.swing.JButton" name="subirVolumen">
 >>>>>>> feature/AvanceGUIRadio
@@ -203,10 +245,17 @@
           </Properties>
           <Events>
 <<<<<<< HEAD
+<<<<<<< HEAD
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton1ActionPerformed"/>
           </Events>
         </Component>
         <Component class="javax.swing.JButton" name="jButton2">
+=======
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="subirVolumenActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JButton" name="bajarVolumen">
+>>>>>>> feature/AvanceGUIRadio
 =======
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="subirVolumenActionPerformed"/>
           </Events>
@@ -220,6 +269,12 @@
             <Property name="text" type="java.lang.String" value="-"/>
           </Properties>
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="bajarVolumenActionPerformed"/>
+          </Events>
+>>>>>>> feature/AvanceGUIRadio
 =======
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="bajarVolumenActionPerformed"/>
@@ -261,10 +316,19 @@
             <DimensionLayout dim="0">
               <Group type="103" groupAlignment="0" attributes="0">
 <<<<<<< HEAD
+<<<<<<< HEAD
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace min="-2" pref="132" max="-2" attributes="0"/>
                       <Component id="estadoLabelRadio" min="-2" max="-2" attributes="0"/>
                       <EmptySpace pref="152" max="32767" attributes="0"/>
+=======
+                  <Group type="102" attributes="0">
+                      <EmptySpace min="-2" pref="19" max="-2" attributes="0"/>
+                      <Component id="frecuenciaLabel" min="-2" pref="415" max="-2" attributes="0"/>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Component id="estadoLabelRadio" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="32767" attributes="0"/>
+>>>>>>> feature/AvanceGUIRadio
 =======
                   <Group type="102" attributes="0">
                       <EmptySpace min="-2" pref="19" max="-2" attributes="0"/>
@@ -279,11 +343,14 @@
             <DimensionLayout dim="1">
               <Group type="103" groupAlignment="0" attributes="0">
 <<<<<<< HEAD
+<<<<<<< HEAD
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace min="-2" pref="72" max="-2" attributes="0"/>
                       <Component id="estadoLabelRadio" min="-2" max="-2" attributes="0"/>
                       <EmptySpace pref="80" max="32767" attributes="0"/>
 =======
+=======
+>>>>>>> feature/AvanceGUIRadio
                   <Group type="102" attributes="0">
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" attributes="0">
@@ -296,6 +363,9 @@
                           </Group>
                       </Group>
                       <EmptySpace pref="52" max="32767" attributes="0"/>
+<<<<<<< HEAD
+>>>>>>> feature/AvanceGUIRadio
+=======
 >>>>>>> feature/AvanceGUIRadio
                   </Group>
               </Group>
@@ -305,7 +375,10 @@
             <Component class="javax.swing.JLabel" name="estadoLabelRadio">
             </Component>
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> feature/AvanceGUIRadio
             <Component class="javax.swing.JLabel" name="frecuenciaLabel">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
@@ -314,6 +387,9 @@
                 <Property name="text" type="java.lang.String" value="Frecuencia"/>
               </Properties>
             </Component>
+<<<<<<< HEAD
+>>>>>>> feature/AvanceGUIRadio
+=======
 >>>>>>> feature/AvanceGUIRadio
           </SubComponents>
         </Container>
@@ -321,12 +397,16 @@
           <Properties>
             <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
 <<<<<<< HEAD
+<<<<<<< HEAD
               <StringArray count="4">
                 <StringItem index="0" value="Item 1"/>
                 <StringItem index="1" value="Item 2"/>
                 <StringItem index="2" value="Item 3"/>
                 <StringItem index="3" value="Item 4"/>
               </StringArray>
+=======
+              <StringArray count="0"/>
+>>>>>>> feature/AvanceGUIRadio
 =======
               <StringArray count="0"/>
 >>>>>>> feature/AvanceGUIRadio
@@ -339,6 +419,7 @@
             <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
           </AuxValues>
         </Component>
+<<<<<<< HEAD
 <<<<<<< HEAD
       </SubComponents>
     </Container>
@@ -353,6 +434,18 @@
         </Component>
       </SubComponents>
     </Container>
+=======
+        <Component class="javax.swing.JRadioButton" name="radioEncender">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Encender"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="radioEncenderActionPerformed"/>
+          </Events>
+        </Component>
+      </SubComponents>
+    </Container>
+>>>>>>> feature/AvanceGUIRadio
     <Component class="javax.swing.JProgressBar" name="actualizarVolumen">
     </Component>
     <Component class="javax.swing.JLabel" name="labelVol">
@@ -363,6 +456,9 @@
         <Property name="text" type="java.lang.String" value="Volumen"/>
       </Properties>
     </Component>
+<<<<<<< HEAD
+>>>>>>> feature/AvanceGUIRadio
+=======
 >>>>>>> feature/AvanceGUIRadio
   </SubComponents>
 </Form>

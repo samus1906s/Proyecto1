@@ -24,7 +24,7 @@ public class SistemaRadio {
     public final double FM_STEP = 0.2;
 
     public SistemaRadio() {
-        this.encendida = true;
+        this.encendida = false;
         this.modo = ModoRadio.FM;
         this.estacionActual = FM_MIN;
     }

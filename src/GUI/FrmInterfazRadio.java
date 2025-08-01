@@ -5,6 +5,10 @@
 package GUI;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+import MotorVehiculo.Motor;
+>>>>>>> feature/AvanceGUIRadio
 =======
 import MotorVehiculo.Motor;
 >>>>>>> feature/AvanceGUIRadio
@@ -21,6 +25,10 @@ import javax.swing.event.ChangeEvent;
 public class FrmInterfazRadio extends javax.swing.JFrame {
     private SistemaRadio sistemaRadio;
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+    Motor motor = new Motor();
+>>>>>>> feature/AvanceGUIRadio
 =======
     Motor motor = new Motor();
 >>>>>>> feature/AvanceGUIRadio
@@ -30,16 +38,25 @@ public class FrmInterfazRadio extends javax.swing.JFrame {
     public FrmInterfazRadio() {
         sistemaRadio = new SistemaRadio();
 <<<<<<< HEAD
+<<<<<<< HEAD
         initComponents();
          
 =======
         
 
         initComponents();
+=======
+        
+
+        initComponents();
+>>>>>>> feature/AvanceGUIRadio
     radioEncender.setEnabled(true);  // El RadioButton está habilitado
     jComboBox1.setEnabled(false);  // El ComboBox está deshabilitado por defecto
     jComboBox2.setEnabled(false);
     motor.encender();
+<<<<<<< HEAD
+>>>>>>> feature/AvanceGUIRadio
+=======
 >>>>>>> feature/AvanceGUIRadio
 }
 
@@ -55,8 +72,13 @@ public class FrmInterfazRadio extends javax.swing.JFrame {
 
         jPanel1 = new javax.swing.JPanel();
 <<<<<<< HEAD
+<<<<<<< HEAD
         jButton1 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
+=======
+        subirVolumen = new javax.swing.JButton();
+        bajarVolumen = new javax.swing.JButton();
+>>>>>>> feature/AvanceGUIRadio
 =======
         subirVolumen = new javax.swing.JButton();
         bajarVolumen = new javax.swing.JButton();
@@ -67,18 +89,26 @@ public class FrmInterfazRadio extends javax.swing.JFrame {
         jPanel2 = new javax.swing.JPanel();
         estadoLabelRadio = new javax.swing.JLabel();
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+        frecuenciaLabel = new javax.swing.JLabel();
+>>>>>>> feature/AvanceGUIRadio
         jComboBox2 = new javax.swing.JComboBox<>();
+        radioEncender = new javax.swing.JRadioButton();
+        actualizarVolumen = new javax.swing.JProgressBar();
+        labelVol = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jButton1.setFont(new java.awt.Font("Segoe UI", 0, 48)); // NOI18N
-        jButton1.setText("+");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        subirVolumen.setFont(new java.awt.Font("Segoe UI", 0, 48)); // NOI18N
+        subirVolumen.setText("+");
+        subirVolumen.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                subirVolumenActionPerformed(evt);
             }
         });
 
+<<<<<<< HEAD
         jButton2.setFont(new java.awt.Font("Segoe UI", 0, 48)); // NOI18N
         jButton2.setText("-");
 =======
@@ -98,6 +128,8 @@ public class FrmInterfazRadio extends javax.swing.JFrame {
             }
         });
 
+=======
+>>>>>>> feature/AvanceGUIRadio
         bajarVolumen.setFont(new java.awt.Font("Segoe UI", 0, 48)); // NOI18N
         bajarVolumen.setText("-");
         bajarVolumen.addActionListener(new java.awt.event.ActionListener() {
@@ -105,6 +137,9 @@ public class FrmInterfazRadio extends javax.swing.JFrame {
                 bajarVolumenActionPerformed(evt);
             }
         });
+<<<<<<< HEAD
+>>>>>>> feature/AvanceGUIRadio
+=======
 >>>>>>> feature/AvanceGUIRadio
 
         jComboBox1.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
@@ -118,6 +153,12 @@ public class FrmInterfazRadio extends javax.swing.JFrame {
         jPanel2.setBackground(new java.awt.Color(204, 204, 204));
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+        frecuenciaLabel.setFont(new java.awt.Font("Segoe UI", 0, 36)); // NOI18N
+        frecuenciaLabel.setText("Frecuencia");
+
+>>>>>>> feature/AvanceGUIRadio
 =======
         frecuenciaLabel.setFont(new java.awt.Font("Segoe UI", 0, 36)); // NOI18N
         frecuenciaLabel.setText("Frecuencia");
@@ -129,9 +170,17 @@ public class FrmInterfazRadio extends javax.swing.JFrame {
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
 <<<<<<< HEAD
+<<<<<<< HEAD
                 .addGap(132, 132, 132)
                 .addComponent(estadoLabelRadio)
                 .addContainerGap(152, Short.MAX_VALUE))
+=======
+                .addGap(19, 19, 19)
+                .addComponent(frecuenciaLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 415, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(estadoLabelRadio)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+>>>>>>> feature/AvanceGUIRadio
 =======
                 .addGap(19, 19, 19)
                 .addComponent(frecuenciaLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 415, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -143,6 +192,7 @@ public class FrmInterfazRadio extends javax.swing.JFrame {
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
+<<<<<<< HEAD
 <<<<<<< HEAD
                 .addGap(72, 72, 72)
                 .addComponent(estadoLabelRadio)
@@ -162,6 +212,18 @@ public class FrmInterfazRadio extends javax.swing.JFrame {
         );
 
 >>>>>>> feature/AvanceGUIRadio
+=======
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addGap(72, 72, 72)
+                        .addComponent(estadoLabelRadio))
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addGap(53, 53, 53)
+                        .addComponent(frecuenciaLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 69, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(52, Short.MAX_VALUE))
+        );
+
+>>>>>>> feature/AvanceGUIRadio
         jComboBox2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jComboBox2ActionPerformed(evt);
@@ -169,7 +231,10 @@ public class FrmInterfazRadio extends javax.swing.JFrame {
         });
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> feature/AvanceGUIRadio
         radioEncender.setText("Encender");
         radioEncender.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -177,11 +242,15 @@ public class FrmInterfazRadio extends javax.swing.JFrame {
             }
         });
 
+<<<<<<< HEAD
+>>>>>>> feature/AvanceGUIRadio
+=======
 >>>>>>> feature/AvanceGUIRadio
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+<<<<<<< HEAD
 <<<<<<< HEAD
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -191,17 +260,15 @@ public class FrmInterfazRadio extends javax.swing.JFrame {
                 .addGap(43, 43, 43)
                 .addComponent(estadoLabel)
                 .addGap(47, 47, 47))
+=======
+>>>>>>> feature/AvanceGUIRadio
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(51, 51, 51)
-                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 86, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(54, 54, 54)
-                        .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 67, Short.MAX_VALUE)
-                        .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(39, 39, 39))
+                        .addGap(33, 33, 33)
+                        .addComponent(radioEncender))
                     .addGroup(jPanel1Layout.createSequentialGroup()
+<<<<<<< HEAD
                         .addGap(4, 4, 4)
                         .addComponent(jComboBox2, javax.swing.GroupLayout.PREFERRED_SIZE, 174, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
@@ -212,6 +279,8 @@ public class FrmInterfazRadio extends javax.swing.JFrame {
                         .addGap(33, 33, 33)
                         .addComponent(radioEncender))
                     .addGroup(jPanel1Layout.createSequentialGroup()
+=======
+>>>>>>> feature/AvanceGUIRadio
                         .addGap(262, 262, 262)
                         .addComponent(jComboBox2, javax.swing.GroupLayout.PREFERRED_SIZE, 174, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
@@ -233,31 +302,42 @@ public class FrmInterfazRadio extends javax.swing.JFrame {
                                 .addGap(71, 71, 71)
                                 .addComponent(bajarVolumen, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE)))
                         .addGap(229, 229, 229))))
+<<<<<<< HEAD
+>>>>>>> feature/AvanceGUIRadio
+=======
 >>>>>>> feature/AvanceGUIRadio
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
 <<<<<<< HEAD
+<<<<<<< HEAD
                 .addContainerGap(14, Short.MAX_VALUE)
+=======
+                .addContainerGap()
+>>>>>>> feature/AvanceGUIRadio
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(estadoLabel)
                     .addComponent(jLabel2))
+                .addGap(18, 18, 18)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(249, 249, 249)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 78, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 76, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGap(121, 121, 121)
+                        .addComponent(radioEncender)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jComboBox2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(21, 21, 21)
+                        .addComponent(subirVolumen, javax.swing.GroupLayout.PREFERRED_SIZE, 76, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(34, 34, 34)
-                        .addComponent(jComboBox2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 47, Short.MAX_VALUE)
-                        .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGap(93, 93, 93))
+                        .addGap(18, 18, 18)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(bajarVolumen, javax.swing.GroupLayout.PREFERRED_SIZE, 78, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addGap(10, 10, Short.MAX_VALUE))
         );
 
+<<<<<<< HEAD
 =======
                 .addContainerGap()
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -285,18 +365,32 @@ public class FrmInterfazRadio extends javax.swing.JFrame {
         labelVol.setText("Volumen");
 
 >>>>>>> feature/AvanceGUIRadio
+=======
+        labelVol.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        labelVol.setText("Volumen");
+
+>>>>>>> feature/AvanceGUIRadio
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addGap(0, 17, Short.MAX_VALUE)
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 719, javax.swing.GroupLayout.PREFERRED_SIZE))
+>>>>>>> feature/AvanceGUIRadio
             .addGroup(layout.createSequentialGroup()
-                .addGap(27, 27, 27)
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(28, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(actualizarVolumen, javax.swing.GroupLayout.PREFERRED_SIZE, 390, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(35, 35, 35)
+                .addComponent(labelVol, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(53, 53, 53))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+<<<<<<< HEAD
             .addComponent(jPanel1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
 =======
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
@@ -311,6 +405,8 @@ public class FrmInterfazRadio extends javax.swing.JFrame {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+=======
+>>>>>>> feature/AvanceGUIRadio
             .addGroup(layout.createSequentialGroup()
                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(30, 30, 30)
@@ -318,6 +414,9 @@ public class FrmInterfazRadio extends javax.swing.JFrame {
                     .addComponent(actualizarVolumen, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(labelVol, javax.swing.GroupLayout.DEFAULT_SIZE, 31, Short.MAX_VALUE))
                 .addContainerGap(239, Short.MAX_VALUE))
+<<<<<<< HEAD
+>>>>>>> feature/AvanceGUIRadio
+=======
 >>>>>>> feature/AvanceGUIRadio
         );
 
@@ -325,20 +424,37 @@ public class FrmInterfazRadio extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here: 
         
     }//GEN-LAST:event_jButton1ActionPerformed
+=======
+    private void subirVolumenActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_subirVolumenActionPerformed
+           if (motor.isState() && radioEncender.isSelected()) {  // Solo si la radio está encendida
+        sistemaRadio.subirVolumen();  // Subir el volumen
+        actualizarVolumen();  // Actualizamos la ProgressBar
+        System.out.println("Volumen: " + sistemaRadio.getVolumen());
+    } else {
+        mostrarMansaje("La radio debe estar encendida para ajustar el volumen.", "Advertencia", JOptionPane.WARNING_MESSAGE);
+    }
+    }//GEN-LAST:event_subirVolumenActionPerformed
+>>>>>>> feature/AvanceGUIRadio
 
+public void mostrarMansaje(String texto, String titulo, int tipoMensaje) {
+        JOptionPane.showMessageDialog(this, texto, titulo, tipoMensaje);
+    }
 
-    
+    public int mostrarMensajeConfirmacion(String texto, String titulo, int tipoRespuesta, int tipoMensaje) {
+        return JOptionPane.showConfirmDialog(this, texto, titulo, tipoRespuesta, tipoMensaje);
+    }
     
     
     private void jComboBox1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox1ActionPerformed
-        String selectedMode = (String) jComboBox1.getSelectedItem();  // Obtiene el valor seleccionado
-
-    System.out.println("Modo seleccionado: " + selectedMode);  // Depuración
+       if (radioEncender.isSelected()) {  // Solo cambiar si la radio está encendida
+        String selectedMode = (String) jComboBox1.getSelectedItem();  // Obtener el valor seleccionado
     
+<<<<<<< HEAD
     // Cambiar el modo de la radio según el valor seleccionado
     switch (selectedMode) {
         case "AM":
@@ -376,6 +492,8 @@ public void mostrarMansaje(String texto, String titulo, int tipoMensaje) {
        if (radioEncender.isSelected()) {  // Solo cambiar si la radio está encendida
         String selectedMode = (String) jComboBox1.getSelectedItem();  // Obtener el valor seleccionado
     
+=======
+>>>>>>> feature/AvanceGUIRadio
         // Limpiar el ComboBox de frecuencias
         jComboBox2.removeAllItems();
     
@@ -422,12 +540,16 @@ public void mostrarMansaje(String texto, String titulo, int tipoMensaje) {
         }
     } else {
         mostrarMansaje("Primero enciende la radio.", "Advertencia", JOptionPane.WARNING_MESSAGE);
+<<<<<<< HEAD
+>>>>>>> feature/AvanceGUIRadio
+=======
 >>>>>>> feature/AvanceGUIRadio
     }//GEN-LAST:event_jComboBox1ActionPerformed
 
     }
     
     private void jComboBox2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox2ActionPerformed
+<<<<<<< HEAD
 <<<<<<< HEAD
         // TODO add your handling code here:
     }//GEN-LAST:event_jComboBox2ActionPerformed
@@ -437,6 +559,11 @@ public void mostrarMansaje(String texto, String titulo, int tipoMensaje) {
         
     }//GEN-LAST:event_jComboBox2ActionPerformed
 
+=======
+        
+    }//GEN-LAST:event_jComboBox2ActionPerformed
+
+>>>>>>> feature/AvanceGUIRadio
     private void radioEncenderActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_radioEncenderActionPerformed
         if (motor.isState()) {  // Si el motor está encendido
         // Activamos la radio
@@ -472,6 +599,9 @@ public void mostrarMansaje(String texto, String titulo, int tipoMensaje) {
     // Opcional: mostrar el volumen como texto en la ProgressBar
     labelVol.setText("Volumen: " + volumen + "%");
 }
+<<<<<<< HEAD
+>>>>>>> feature/AvanceGUIRadio
+=======
 >>>>>>> feature/AvanceGUIRadio
 
 
@@ -512,10 +642,18 @@ public void mostrarMansaje(String texto, String titulo, int tipoMensaje) {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
 <<<<<<< HEAD
+<<<<<<< HEAD
     private javax.swing.JLabel estadoLabel;
     private javax.swing.JLabel estadoLabelRadio;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
+=======
+    private javax.swing.JProgressBar actualizarVolumen;
+    private javax.swing.JButton bajarVolumen;
+    private javax.swing.JLabel estadoLabel;
+    private javax.swing.JLabel estadoLabelRadio;
+    private javax.swing.JLabel frecuenciaLabel;
+>>>>>>> feature/AvanceGUIRadio
 =======
     private javax.swing.JProgressBar actualizarVolumen;
     private javax.swing.JButton bajarVolumen;
@@ -529,6 +667,12 @@ public void mostrarMansaje(String texto, String titulo, int tipoMensaje) {
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+    private javax.swing.JLabel labelVol;
+    private javax.swing.JRadioButton radioEncender;
+    private javax.swing.JButton subirVolumen;
+>>>>>>> feature/AvanceGUIRadio
 =======
     private javax.swing.JLabel labelVol;
     private javax.swing.JRadioButton radioEncender;
